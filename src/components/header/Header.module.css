@@ -1,0 +1,355 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CED2DA;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    min-width: 120px;
+}
+
+.txtLogo {
+    font-size: 14px;
+    color: #007bff;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.categoriesNav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 100%;
+}
+
+.categoryItem {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.categoryButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.categoryButton:hover {
+    background-color: #f5f5f5;
+    color: #DB0019;
+}
+
+.categoryIcon {
+    font-size: 18px;
+}
+
+.categoryName {
+    white-space: nowrap;
+}
+
+.megaMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 600px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.megaMenuContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.menuSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuSectionTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #DB0019;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.subcategoryList,
+.popularList,
+.promotionList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subcategoryList li,
+.popularList li,
+.promotionList li {
+    margin-bottom: 8px;
+}
+
+.subcategoryLink,
+.popularLink,
+.promotionLink {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    display: block;
+    padding: 4px 0;
+}
+
+.subcategoryLink:hover,
+.popularLink:hover,
+.promotionLink:hover {
+    color: #DB0019;
+    transform: translateX(4px);
+}
+
+.promotionLink {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 24px;
+    position: relative;
+}
+
+.searchInput {
+    width: 100%;
+    height: 40px;
+    padding: 0 40px 0 16px;
+    border: 1px solid #CED2DA;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: #DB0019;
+    box-shadow: 0 0 0 2px rgba(219, 0, 25, 0.1);
+}
+
+.searchButton {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.searchButton:hover {
+    opacity: 1;
+}
+
+.rightBlock {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 200px;
+    justify-content: flex-end;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.iconButton:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.1);
+}
+
+.cartButton {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartButton:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.1);
+}
+
+.cartBadge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #DB0019;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.cartOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.cartContainer {
+    width: 100%;
+    max-width: 830px;
+    height: 100vh;
+    background: white;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .categoriesNav {
+        gap: 16px;
+    }
+
+    .categoryName {
+        display: none;
+    }
+
+    .categoryButton {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .searchForm {
+        max-width: 300px;
+    }
+
+    .rightBlock {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .categoriesNav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .searchForm {
+        order: 2;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .rightBlock {
+        order: 1;
+    }
+
+    .megaMenu {
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

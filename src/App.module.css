@@ -1,0 +1,38 @@
+.app{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    max-width: 1400px;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.resultsHeader{
+    margin-bottom: 30px;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

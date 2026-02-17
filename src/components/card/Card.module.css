@@ -1,0 +1,278 @@
+.card {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 16px;
+    background: white;
+    transition: box-shadow 0.3s ease;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badges {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.discountBadge {
+    background: #ff4444;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.newBadge {
+    background: #4caf50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 16px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.noImage {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Стили для навигации */
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e0e0e0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+.imageContainer:hover .navButton {
+    opacity: 1;
+}
+
+.navButton:hover {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prevButton {
+    left: 8px;
+}
+
+.nextButton {
+    right: 8px;
+}
+
+/* Индикаторы */
+.indicators {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.indicator:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.activeIndicator {
+    background: white;
+    transform: scale(1.2);
+}
+
+.photoCounter {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #333;
+}
+
+.features {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    color: #666;
+}
+
+.featureLabel {
+    color: #999;
+}
+
+.featureValue {
+    font-weight: 500;
+}
+
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.starFull {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+.starHalf {
+    color: #ffc107;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.starEmpty {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.ratingValue {
+    font-weight: 600;
+    color: #333;
+}
+
+.reviewsCount {
+    color: #999;
+    font-size: 14px;
+}
+
+.priceContainer {
+    margin-bottom: 16px;
+}
+
+.oldPrice {
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.currentPrice {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.cartButton {
+    flex: 1;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cartButton:hover {
+    background: #0056b3;
+}
+
+.iconButtons {
+    display: flex;
+    gap: 4px;
+}
+
+.iconButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.iconButton:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}

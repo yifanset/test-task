@@ -1,0 +1,244 @@
+{
+  "goods": [
+    {
+      "id": 1,
+      "brand": "Apple",
+      "name": "iPhone 15 Pro",
+      "key_features": {
+        "memory": "256 ГБ",
+        "display": "6.1 дюйма Super Retina XDR",
+        "processor": "A17 Pro"
+      },
+      "rating": 4.9,
+      "reviews_count": 245,
+      "price": 119990,
+      "discount": 10,
+      "is_new": true,
+      "photos": ["/storage/photo1.png", "/storage/photo2.png"]
+    },
+    {
+      "id": 2,
+      "brand": "Apple",
+      "name": "MacBook Air 13",
+      "key_features": {
+        "memory": "16 ГБ / 512 ГБ SSD",
+        "display": "13.6 дюйма Liquid Retina",
+        "processor": "Apple M2"
+      },
+      "rating": 4.8,
+      "reviews_count": 187,
+      "price": 149990,
+      "discount": 5,
+      "is_new": false,
+      "photos": ["/storage/photo2.png", "/storage/photo3.png"]
+    },
+    {
+      "id": 3,
+      "brand": "Apple",
+      "name": "iPad Pro 12.9",
+      "key_features": {
+        "memory": "8 ГБ / 256 ГБ",
+        "display": "12.9 дюйма Liquid Retina XDR",
+        "processor": "Apple M2"
+      },
+      "rating": 4.9,
+      "reviews_count": 98,
+      "price": 129990,
+      "discount": 0,
+      "is_new": true,
+      "photos": ["/storage/photo3.png", "/storage/photo4.png"]
+    },
+    {
+      "id": 4,
+      "brand": "Apple",
+      "name": "Watch Series 9",
+      "key_features": {
+        "memory": "64 ГБ",
+        "display": "1.9 дюйма Always-On Retina",
+        "processor": "S9 SiP"
+      },
+      "rating": 4.7,
+      "reviews_count": 312,
+      "price": 45990,
+      "discount": 15,
+      "is_new": true,
+      "photos": ["/storage/photo4.png"]
+    },
+    {
+      "id": 5,
+      "brand": "Apple",
+      "name": "AirPods Pro 2",
+      "key_features": {
+        "memory": "Зарядный кейс 523 мАч",
+        "display": "Без дисплея",
+        "processor": "H2"
+      },
+      "rating": 4.8,
+      "reviews_count": 567,
+      "price": 24990,
+      "discount": 0,
+      "is_new": false,
+      "photos": ["/storage/photo5.png"]
+    },
+    {
+      "id": 6,
+      "brand": "Samsung",
+      "name": "Galaxy S24 Ultra",
+      "key_features": {
+        "memory": "512 ГБ",
+        "display": "6.8 дюйма Dynamic AMOLED",
+        "processor": "Snapdragon 8 Gen 3"
+      },
+      "rating": 4.8,
+      "reviews_count": 156,
+      "price": 139990,
+      "discount": 12,
+      "is_new": true,
+      "photos": ["/storage/photo1.png", "/storage/photo3.png", "/storage/photo5.png"]
+    },
+    {
+      "id": 7,
+      "brand": "Samsung",
+      "name": "Galaxy Book3 Pro",
+      "key_features": {
+        "memory": "16 ГБ / 1 ТБ SSD",
+        "display": "16 дюймов AMOLED",
+        "processor": "Intel Core i7-1360P"
+      },
+      "rating": 4.6,
+      "reviews_count": 73,
+      "price": 159990,
+      "discount": 20,
+      "is_new": false,
+      "photos": ["/storage/photo2.png", "/storage/photo4.png"]
+    },
+    {
+      "id": 8,
+      "brand": "Samsung",
+      "name": "Galaxy Tab S9 Ultra",
+      "key_features": {
+        "memory": "12 ГБ / 512 ГБ",
+        "display": "14.6 дюйма Super AMOLED",
+        "processor": "Snapdragon 8 Gen 2"
+      },
+      "rating": 4.7,
+      "reviews_count": 45,
+      "price": 114990,
+      "discount": 0,
+      "is_new": true,
+      "photos": ["/storage/photo3.png", "/storage/photo1.png"]
+    },
+    {
+      "id": 9,
+      "brand": "Samsung",
+      "name": "Galaxy Watch6 Classic",
+      "key_features": {
+        "memory": "16 ГБ",
+        "display": "1.5 дюйма Super AMOLED",
+        "processor": "Exynos W930"
+      },
+      "rating": 4.5,
+      "reviews_count": 189,
+      "price": 35990,
+      "discount": 25,
+      "is_new": false,
+      "photos": ["/storage/photo4.png"]
+    },
+    {
+      "id": 10,
+      "brand": "Xiaomi",
+      "name": "14 Ultra",
+      "key_features": {
+        "memory": "512 ГБ",
+        "display": "6.73 дюйма AMOLED",
+        "processor": "Snapdragon 8 Gen 3"
+      },
+      "rating": 4.6,
+      "reviews_count": 89,
+      "price": 99990,
+      "discount": 18,
+      "is_new": true,
+      "photos": ["/storage/photo5.png", "/storage/photo2.png"]
+    },
+    {
+      "id": 11,
+      "brand": "Xiaomi",
+      "name": "Pad 6 Pro",
+      "key_features": {
+        "memory": "8 ГБ / 256 ГБ",
+        "display": "11 дюймов IPS",
+        "processor": "Snapdragon 870"
+      },
+      "rating": 4.4,
+      "reviews_count": 112,
+      "price": 44990,
+      "discount": 0,
+      "is_new": false,
+      "photos": ["/storage/photo1.png", "/storage/photo3.png"]
+    },
+    {
+      "id": 12,
+      "brand": "Xiaomi",
+      "name": "Smart Band 8 Pro",
+      "key_features": {
+        "memory": "32 МБ",
+        "display": "1.74 дюйма AMOLED",
+        "processor": "ARM Cortex-M4"
+      },
+      "rating": 4.5,
+      "reviews_count": 423,
+      "price": 4990,
+      "discount": 10,
+      "is_new": true,
+      "photos": ["/storage/photo4.png"]
+    },
+    {
+      "id": 13,
+      "brand": "Google",
+      "name": "Pixel 8 Pro",
+      "key_features": {
+        "memory": "256 ГБ",
+        "display": "6.7 дюйма LTPO OLED",
+        "processor": "Google Tensor G3"
+      },
+      "rating": 4.7,
+      "reviews_count": 134,
+      "price": 89990,
+      "discount": 0,
+      "is_new": true,
+      "photos": ["/storage/photo2.png", "/storage/photo5.png"]
+    },
+    {
+      "id": 14,
+      "brand": "Google",
+      "name": "Pixel Watch 2",
+      "key_features": {
+        "memory": "32 ГБ",
+        "display": "1.2 дюйма AMOLED",
+        "processor": "Qualcomm 5100"
+      },
+      "rating": 4.3,
+      "reviews_count": 67,
+      "price": 27990,
+      "discount": 15,
+      "is_new": false,
+      "photos": ["/storage/photo3.png"]
+    },
+    {
+      "id": 15,
+      "brand": "OnePlus",
+      "name": "12",
+      "key_features": {
+        "memory": "512 ГБ",
+        "display": "6.82 дюйма LTPO AMOLED",
+        "processor": "Snapdragon 8 Gen 3"
+      },
+      "rating": 4.6,
+      "reviews_count": 92,
+      "price": 89990,
+      "discount": 8,
+      "is_new": true,
+      "photos": ["/storage/photo1.png", "/storage/photo4.png"]
+    }
+  ]
+}

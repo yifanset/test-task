@@ -1,0 +1,26 @@
+#root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #141C24;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+button{
+  font-weight: 800;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
