@@ -15,7 +15,7 @@ const CardList: React.FC<CardListProps> = ({ filters, onTotalFoundChange }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('/data/data.json');
+                const response = await fetch('./data/data.json');
                 const data: ApiResponse = await response.json();
                 setAllProducts(data.goods);
             } catch (error) {
